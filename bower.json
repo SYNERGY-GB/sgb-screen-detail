@@ -1,0 +1,28 @@
+{
+  "name": "sgb-screen-product-detail",
+  "version": "0.1.0",
+  "authors": [
+    "aaramirez <alexander.ramirez@synergy-gb.com>"
+  ],
+  "description": "Product details screen",
+  "main": "dist/sgb-screen-product-detail.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "sgb",
+    "sgb-screen"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "megazord-framework": "git@github.com:SYNERGY-GB/megazord-framework.git#master"
+  }
+}
