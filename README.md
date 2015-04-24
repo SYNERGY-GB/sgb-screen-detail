@@ -1,1 +1,1 @@
-# sgb-screen-product-detail
+# sgb-screen-detail

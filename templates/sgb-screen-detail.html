@@ -1,0 +1,23 @@
+<ion-view view-title="{{ 'detail_title' | translate }}" class="back">
+    <ion-content>
+        <div class="list card opaque">
+
+            <div class="item item-avatar item-divider">
+                <h2>{{ item.title }}</h2>
+                <h3 class="positive" ng-show="item.detail1">{{ item.detail1 }}</h3>
+                <h3 class="positive" ng-show="item.detail2">{{ item.detail2 }}</h3>
+                <i class="icon ion-link">
+                    <a class="nodecor" href="{{ item.url }}" ng-show="item.url">
+                        {{ item.url }}
+                    </a>
+                </i>
+            </div>
+
+            <div class="item item-body">
+                <p>
+                    {{ item.description }}
+                </p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

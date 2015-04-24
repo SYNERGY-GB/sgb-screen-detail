@@ -5,7 +5,7 @@
     "aaramirez <alexander.ramirez@synergy-gb.com>"
   ],
   "description": "Product details screen",
-  "main": "dist/sgb-screen-product-detail.js",
+  "main": "dist/sgb-screen-detail.js",
   "moduleType": [
     "globals"
   ],
