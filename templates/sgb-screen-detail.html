@@ -3,21 +3,37 @@
         <div class="list card opaque">
 
             <div class="item item-avatar item-divider">
+                <img ng-show="item.image" ng-src="{{ item.image }}">
                 <h2>{{ item.title }}</h2>
                 <h3 class="positive" ng-show="item.detail1">{{ item.detail1 }}</h3>
-                <h3 class="positive" ng-show="item.detail2">{{ item.detail2 }}</h3>
-                <i class="icon ion-link">
-                    <a class="nodecor" href="{{ item.url }}" ng-show="item.url">
+                <h3 class="positive" ng-show="item.company">{{ item.company }}</h3>
+                <i class="icon ion-link" ng-show="item.url">
+                    <a class="nodecor" href="{{ item.url }}">
                         {{ item.url }}
                     </a>
                 </i>
             </div>
-
-            <div class="item item-body">
+            <div class="item" ng-show="item.telephone || item.email || item.linkedin">
+                <div class="row row-center">
+                    <img class="col" ng-show="item.telephone" ng-src="../resources/telephone_icon.png">
+                    <p class="col col-90">{{ item.telephone }}</p>
+                </div>
+                <div class="row row-center">
+                    <img class="col" ng-show="item.email" ng-src="../resources/email_icon.png">
+                    <p class="col col-90">{{ item.email }}</p>
+                </div>
+                <div class="row row-center">
+                    <img class="col" ng-show="item.linkedin" ng-src="../resources/linkedin_icon.png">
+                    <p class="col col-90">{{ item.linkedin }}</p>
+                </div>
+            </div>
+            <div class="item">
                 <p>
                     {{ item.description }}
                 </p>
             </div>
+        </div>
+
         </div>
     </ion-content>
 </ion-view>
