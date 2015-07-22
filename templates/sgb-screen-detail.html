@@ -12,8 +12,8 @@
                     </a>
                 </i>
             </div>
-            <div class="row item item-divider">
-                <div class="row" ng-show="item.resource_1 || item.resource_2 || item.resource_3">
+            <div class="row item item-divider" ng-show="item.resource_1 || item.resource_2 || item.resource_3">
+                <div class="row">
                     <div class="col-33" ng-show="item.resource_1">
                         <a class="nodecor" href="{{item.resource_1.url}}">
                             <img class="col-50 col-offset-25" ng-src="{{res_location[0]}}">
