@@ -1,39 +1,39 @@
 <ion-view view-title="{{ title | translate }}" class="appBackground">
     <ion-content>
         <div class="list card opaque">
-
-            <div class="item item-avatar item-divider">
+            <div class="item item-avatar">
                 <img ng-show="item.image" ng-src="{{ item.image }}">
                 <h2>{{ item.title }}</h2>
-                <h3 class="positive" ng-show="item.detail1">{{ item.detail1 }}</h3>
-                <h3 class="positive" ng-show="item.company">{{ item.company }}</h3>
+                <h3 class="positive" ng-show="item.detail_1">{{ item.detail_1 }}</h3>
+                <h3 class="positive" ng-show="item.detail_2">{{ item.detail_2 }}</h3>
                 <i class="icon ion-link" ng-show="item.url">
                     <a class="nodecor" href="{{ item.url }}">
                         {{ item.url }}
                     </a>
                 </i>
             </div>
-            <div class="item" ng-show="item.telephone || item.email || item.linkedin">
-                <div class="row row-center">
-                    <img class="col" ng-show="item.telephone" ng-src="../resources/telephone_icon.png">
-                    <p class="col col-90">{{ item.telephone }}</p>
-                </div>
-                <div class="row row-center">
-                    <img class="col" ng-show="item.email" ng-src="../resources/email_icon.png">
-                    <p class="col col-90">{{ item.email }}</p>
-                </div>
-                <div class="row row-center">
-                    <img class="col" ng-show="item.linkedin" ng-src="../resources/linkedin_icon.png">
-                    <p class="col col-90">{{ item.linkedin }}</p>
+            <div class="row item item-divider">
+                <div class="row" ng-show="item.resource_1 || item.resource_2 || item.resource_3">
+                    <div class="col-33" ng-show="item.resource_1">
+                        <a class="nodecor" href="{{item.resource_1.url}}">
+                            <img class="col-50 col-offset-25" ng-src="{{res_location[0]}}">
+                        </a>
+                    </div>
+                    <div class="col-33" ng-show="item.resource_2">
+                        <a class="nodecor" href="{{item.resource_2.url}}">
+                            <img class="col-50 col-offset-25" ng-src="{{res_location[1]}}">
+                        </a>
+                    </div>
+                    <div class="col-33" ng-show="item.resource_3">
+                        <a class="nodecor" href="{{item.resource_3.url}}">
+                            <img class="col-50 col-offset-25" ng-src="{{res_location[2]}}">
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <p>
-                    {{ item.description }}
-                </p>
+            <div class="item item-text-wrap" ng-show="item.description">
+                <p>{{ item.desc }}</p>
             </div>
-        </div>
-
         </div>
     </ion-content>
 </ion-view>

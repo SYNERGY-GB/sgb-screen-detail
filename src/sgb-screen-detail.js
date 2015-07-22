@@ -6,5 +6,6 @@ angular.module('sgb-screen-detail', ['megazord'])
         _screen.initialize($scope, _screenParams);
 
         $scope.item = $stateParams.data;
+        $scope.res_location = _screenParams.res_location; 
 
     }]);
