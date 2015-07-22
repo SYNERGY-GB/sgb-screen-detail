@@ -12,26 +12,16 @@
                     </a>
                 </i>
             </div>
-            <div class="row item item-divider" ng-show="item.resource_1 || item.resource_2 || item.resource_3">
+            <div class="row item item-divider" ng-show="item.resources.length">
                 <div class="row">
-                    <div class="col-33" ng-show="item.resource_1">
-                        <a class="nodecor" href="{{item.resource_1.url}}">
-                            <img class="col-50 col-offset-25" ng-src="{{res_location[0]}}">
-                        </a>
-                    </div>
-                    <div class="col-33" ng-show="item.resource_2">
-                        <a class="nodecor" href="{{item.resource_2.url}}">
-                            <img class="col-50 col-offset-25" ng-src="{{res_location[1]}}">
-                        </a>
-                    </div>
-                    <div class="col-33" ng-show="item.resource_3">
-                        <a class="nodecor" href="{{item.resource_3.url}}">
-                            <img class="col-50 col-offset-25" ng-src="{{res_location[2]}}">
+                    <div class="col-33" ng-repeat="resource in item.resources | limitTo:3">
+                        <a class="nodecor" href="{{resource.url}}">
+                            <img class="col-50 col-offset-25" ng-src="{{resource.src}}">
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="item item-text-wrap" ng-show="item.description">
+            <div class="item item-text-wrap" ng-show="item.desc">
                 <p>{{ item.desc }}</p>
             </div>
         </div>
