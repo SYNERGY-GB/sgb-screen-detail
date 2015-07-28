@@ -6,6 +6,7 @@
                 <h2>{{ item.title }}</h2>
                 <h3 class="positive" ng-show="item.detail_1">{{ item.detail_1 }}</h3>
                 <h3 class="positive" ng-show="item.detail_2">{{ item.detail_2 }}</h3>
+                <h4 class="positive" ng-show="item.date">{{ item.date | date : format : short }}</h4>
                 <i class="icon ion-link" ng-show="item.url">
                     <a class="nodecor" href="{{ item.url }}">
                         {{ item.url }}
