@@ -14,15 +14,13 @@
                 </i>
             </div>
             <div class="row item item-divider" ng-show="item.resources.length">
-                <div class="row">
-                    <div class="col-33" ng-repeat="resource in item.resources | limitTo:3">
-                        <a class="nodecor" href="{{resource.url}}">
-                            <img class="col-50 col-offset-25" ng-src="{{resource.src}}">
-                        </a>
-                    </div>
+                <div class="col col-25" ng-repeat="resource in item.resources | limitTo:3" ng-class="{'col-offset-10' : $index > 0}">
+                    <a class="nodecor" href="{{resource.url}}">
+                        <img ng-src="{{resource.src}}" style="width:100%">
+                    </a>
                 </div>
             </div>
-            <div class="item item-text-wrap" ng-show="item.desc">
+            <div class="item item-text-wrap" ng-show="item.desc" style="text-align: justify">
                 <p>{{ item.desc }}</p>
             </div>
         </div>
