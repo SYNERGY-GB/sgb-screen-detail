@@ -1,0 +1,24 @@
+<div class="list card opaque">
+    <div class="item item-avatar item-text-wrap">
+        <img ng-show="data.image" ng-src="{{ data.image }}">
+        <h2>{{ data.title }}</h2>
+        <h3 class="positive" ng-show="data.detail_1">{{ data.detail_1 }}</h3>
+        <h3 class="positive" ng-show="data.detail_2">{{ data.detail_2 }}</h3>
+        <h4 class="positive" ng-show="data.date">{{ data.date | date : format : short }}</h4>
+        <i class="icon ion-link" ng-show="data.url">
+            <a class="nodecor" href="{{ data.url }}">
+                {{ data.url }}
+            </a>
+        </i>
+    </div>
+    <div class="row item item-divider" ng-show="data.resources.length">
+        <div class="col col-25" ng-repeat="resource in data.resources | limitTo:3" ng-class="{'col-offset-10' : $index > 0}">
+            <a class="nodecor" href="{{resource.url}}">
+                <img ng-src="{{resource.src}}" style="width:100%">
+            </a>
+        </div>
+    </div>
+    <div class="item item-text-wrap" ng-show="data.desc" style="text-align: justify">
+        <p>{{ data.desc }}</p>
+    </div>
+</div>

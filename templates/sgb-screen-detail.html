@@ -1,28 +1,5 @@
 <ion-view view-title="{{ title | translate }}" class="appBackground">
     <ion-content>
-        <div class="list card opaque">
-            <div class="item item-avatar item-text-wrap">
-                <img ng-show="item.image" ng-src="{{ item.image }}">
-                <h2>{{ item.title }}</h2>
-                <h3 class="positive" ng-show="item.detail_1">{{ item.detail_1 }}</h3>
-                <h3 class="positive" ng-show="item.detail_2">{{ item.detail_2 }}</h3>
-                <h4 class="positive" ng-show="item.date">{{ item.date | date : format : short }}</h4>
-                <i class="icon ion-link" ng-show="item.url">
-                    <a class="nodecor" href="{{ item.url }}">
-                        {{ item.url }}
-                    </a>
-                </i>
-            </div>
-            <div class="row item item-divider" ng-show="item.resources.length">
-                <div class="col col-25" ng-repeat="resource in item.resources | limitTo:3" ng-class="{'col-offset-10' : $index > 0}">
-                    <a class="nodecor" href="{{resource.url}}">
-                        <img ng-src="{{resource.src}}" style="width:100%">
-                    </a>
-                </div>
-            </div>
-            <div class="item item-text-wrap" ng-show="item.desc" style="text-align: justify">
-                <p>{{ item.desc }}</p>
-            </div>
-        </div>
+        <mz-template bind-to="data" template-type="templateType"></mz-template>
     </ion-content>
 </ion-view>
