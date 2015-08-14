@@ -6,10 +6,6 @@ angular.module('sgb-screen-detail', ['megazord'])
 
         _screen.initialize($scope, _screenParams);
         $scope.data = $stateParams.data;
-        $scope.templateType = _screenParams.templateType; 
-
-        //Delete after mz framework gets updated
-        $scope.screenType = "sgb-screen-detail";
 
     }]); 
 
