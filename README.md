@@ -26,7 +26,7 @@ Para el template @terms, se espera una lista adicional bajo el nombre de items d
 Para el template @info, se espera otro campo *message*, que sea el contenido a mostrar <br/>
 Para el template @news, se espera una lista adicional bajo el nombre de *items* donde cada ítem tiene dos campos: 
 
-- **desc**:descripcion del ítem
+- **desc**: descripcion del ítem
 - **image**: imágen del ítem
 
 <h3>Parámetros de la pantalla</h3>
