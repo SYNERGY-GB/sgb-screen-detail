@@ -35,4 +35,6 @@ Para el template @news, se espera una lista adicional bajo el nombre de *items* 
 
 <h3>Diseño</h3>
 
+<h4> Opcion @contact </h4>
+
 ![Alt Text](https://s3.amazonaws.com/megazord-framework/balsamiq+mockups/sgb-screen-detail.png)
