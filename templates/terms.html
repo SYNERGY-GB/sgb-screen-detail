@@ -1,12 +1,12 @@
-<div ng-show="screenParams.screenTitle" class="text-center">
-    <h3 class="digitel-title wrap"> {{screenParams.screenTitle}} </h3>
+<div ng-show="bindTo.screenTitle" class="text-center">
+    <h3 class="digitel-title wrap"> {{bindTo.screenTitle}} </h3>
 </div>
 <div class="terms-push-content" scroll="false">
 	<div class="digitel-logo"></div>
 	<div class="terms-dark-background">
 		<ion-scroll direction="y" class="myScroll text-center">
-			<h2 ng-show="screenParams.screenSubtitle" class="digitel-subtitle wrap">{{screenParams.screenSubtitle}}</h2>
-			<p class="terms-digitel-text" ng-repeat="item in bindTo"> {{item.desc}} </p>
+			<h2 ng-show="bindTo.screenSubtitle" class="digitel-subtitle wrap">{{bindTo.screenSubtitle}}</h2>
+			<p class="terms-digitel-text" ng-repeat="item in bindTo.items"> {{item.desc}} </p>
 		</ion-scroll>
 	</div>
 	<label class="row button item item-input digitel-input back-button-background"
