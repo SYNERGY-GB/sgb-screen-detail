@@ -4,13 +4,11 @@
 <div class="push-content">
 	<div class="logo-background"></div>
 	<div class="dark-background-top"></div>
-	<div ng-show="bindTo.screenSubtitle" 
-		 class="dark-background-middle text-center">
+		
+	<div class="dark-background-middle text-center">
 		<h3 >{{bindTo.screenSubtitle}}</h3>
-	</div>
-	<div class="dark-background-middle ">
 		<ion-scroll direction="y" scrollbar-y="false"
-			 class="scroll-size text-center">
+			 class="scroll-size">
 			<p ng-repeat="item in bindTo.items" ng-show="bindTo.items"> {{item.desc}}</p>
 			<h4 ng-show="bindTo.message"> {{bindTo.message}} </h4>
 		</ion-scroll>

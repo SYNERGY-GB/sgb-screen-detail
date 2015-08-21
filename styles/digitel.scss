@@ -3,8 +3,8 @@ $login-btn-background: 'https://s3.amazonaws.com/megazord-framework/test/digitel
 $app-background: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/Artboard-2.png'; 
 $dark-top : 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/fondo-02.svg';
 $dark-middle: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/fondo-01.svg';
-$scroll-size: 340px;  
-$push-box: 7.1em;
+$scroll-size: 300px;  
+$push-box: 6.1em;
 
 /* Text Styling */
 
@@ -49,8 +49,6 @@ $link-color: blue !default;
 
 //Icon size
 $icon-size: 200% !default; 
-
-$push: 260px; 
 
 
 /* Mixins */
