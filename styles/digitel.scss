@@ -1,0 +1,207 @@
+$logo-background: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/RecursosLogin-02.svg'; 
+$login-btn-background: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/RecursosLogin-05.svg';
+$app-background: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/Artboard-2.png'; 
+$dark-top : 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/fondo-02.svg';
+$dark-middle: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/fondo-01.svg';
+$scroll-size: 340px;  
+$push-box: 7.1em;
+
+/* Text Styling */
+
+//Title color, font and size
+$title-color: #ffffff !default; 
+$title-font: Arial, Helvetica, sans-serif !default;
+$title-size: 24px !default;
+
+//Subtitle color, font and size
+
+$subtitle-color: #ffffff !default; 
+$subtitle-font: Arial, Helvetica, sans-serif !default;
+$subtitle-size: 20px !default;
+
+//text color, font and size
+
+$text-color: #ffffff !default; 
+$text-font: Arial, Helvetica, sans-serif !default;
+$text-size: 14px !default;
+
+//Input fields & labels
+
+$input-height: 50px !default; 
+$input-border-radius: 4px !default; 
+$input-border-width: 1px !default; 
+$input-separation: -0.8em !default;
+$input-border-color: #ffffff !default;
+$input-text-color: #ffffff !default; 
+
+//Input placeholder color
+
+$placeholder-color: #ffffff !important; 
+
+//Top bar (header) color
+$top-bar-color: blue !default;
+
+//Bottom bar (footer) color
+$bottom-bar-color: blue !default;
+
+//links color 
+$link-color: blue !default;  
+
+//Icon size
+$icon-size: 200% !default; 
+
+$push: 260px; 
+
+
+/* Mixins */
+
+@mixin standard-background  ($background) {
+	background: url($background) no-repeat center;
+	background-size: 100%;
+}
+
+@mixin standard-placeholder ($color) {
+	color: $color;  
+    opacity : 1; 
+}
+
+@mixin push($n) {
+	position:relative; 
+	top: $n; 
+}
+
+@mixin pull($n) {
+	position:relative; 
+	bottom: $n; 
+}
+
+//CSS Start
+
+/* Text classes, overwrite default html tags css*/
+
+p, h5, h6 {
+	color: $text-color; 
+	font-family: $text-font; 
+	font-size: $text-size; 
+}
+
+h3, h4 {
+	color: $subtitle-color; 
+	font-family: $subtitle-font; 
+	font-size: $subtitle-size; 
+}
+
+h1, h2 {
+	color: $title-color; 
+	font-family: $title-font; 
+	font-size: $title-size; 
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+	thick {
+		font-style:bold; 
+	}
+}
+
+/* Input fields & labels */
+
+.app-input  {
+	height: $input-height; 
+	border-radius: $input-border-radius;
+	border-width: $input-border-width;
+	margin-bottom: $input-separation;
+	border-color: $input-border-color;  
+}
+
+/* Password and input text color */
+
+input[type="text"], input[type="password"] {
+  color : $input-text-color; 
+}
+
+/* input placeholder */
+
+::-webkit-input-placeholder {
+  	@include standard-placeholder($placeholder-color);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	@include standard-placeholder($placeholder-color);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	@include standard-placeholder($placeholder-color);
+}
+
+:-ms-input-placeholder {  
+	@include standard-placeholder($placeholder-color);
+}
+
+/*div wrapping*/
+
+.wrap {
+    display: inline-block;
+    overflow: hidden;
+}
+
+/*------------------------------------------------------------------------*/
+
+
+
+.push-content {
+	@include push($push-box); 
+}
+
+.logo-background {
+	background: url($logo-background) no-repeat center;
+	background-size: 15%;
+	height: 5em;  
+	margin-top: 0.2em;
+	margin-bottom: -3em;
+}
+
+.app-background {
+	@include standard-background($app-background);
+}
+
+.back-button-background {
+	@include standard-background($login-btn-background);
+}
+
+.dark-background-top {
+	@include standard-background($dark-top);
+	height: 5em;   
+	margin-top:0.7em; 
+}
+
+.dark-background-middle {
+	background: url($dark-middle) repeat-y center;
+	background-size: 100%; 
+	margin-top: -0.9em;
+	padding-left: 2em;
+	padding-right: 2em; 
+}
+
+.dark-background-bottom {
+	@include standard-background($dark-middle);
+	height: 1em;   
+}
+
+
+.scroll-size {
+	height: $scroll-size; 
+}
+
+
+
+p {
+	color: white !important;
+	font-size: 0.7em; 	
+	margin-left: 1em;
+	margin-right: 1em;  
+	text-align: justify;
+}
+
+
+
+
