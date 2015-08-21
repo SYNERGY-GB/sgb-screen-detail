@@ -182,14 +182,19 @@ input[type="text"], input[type="password"] {
 	padding-right: 2em; 
 }
 
+.terms-subtitle {
+	color:red;  
+}
+
 .dark-background-bottom {
 	@include standard-background($dark-middle);
 	height: 1em;   
 }
 
-
 .scroll-size {
 	height: $scroll-size; 
+	padding-top: 1em;
+	margin-top: 0.9em;
 }
 
 
