@@ -12,12 +12,13 @@
 			<p ng-repeat="item in bindTo.items" ng-show="bindTo.items"> {{item.desc}}</p>
 			<h4 ng-show="bindTo.message"> {{bindTo.message}} </h4>
 		</ion-scroll>
-	</div>
-	<div class="dark-background-bottom"></div>
-	<label class="row item app-input back-button-background"
+		<label class="row item app-input back-button-background"
                    data-ng-click="params.goBack()">
-	    <div class="col col-80 text-right">
-	       <p class="wrap"> {{'go_back' | translate}} </p>
-	    </div>
-    </label>
+		    <div class="col col-80 text-right">
+		       <p class="wrap"> {{'go_back' | translate}} </p>
+		    </div>
+    	</label>
+    	<br/>
+	</div>
+
 </div>

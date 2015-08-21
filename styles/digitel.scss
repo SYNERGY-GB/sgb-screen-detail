@@ -164,6 +164,7 @@ input[type="text"], input[type="password"] {
 
 .back-button-background {
 	@include standard-background($login-btn-background);
+	margin-top: 1.5em;
 }
 
 .dark-background-top {
@@ -176,8 +177,7 @@ input[type="text"], input[type="password"] {
 	background: url($dark-middle) repeat-y center;
 	background-size: 100%; 
 	margin-top: -0.9em;
-	padding-left: 2em;
-	padding-right: 2em; 
+
 }
 
 .terms-subtitle {
@@ -193,6 +193,8 @@ input[type="text"], input[type="password"] {
 	height: $scroll-size; 
 	padding-top: 1em;
 	margin-top: 0.9em;
+	padding-left: 2em;
+	padding-right: 2em; 
 }
 
 
