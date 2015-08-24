@@ -17,13 +17,12 @@ Para el template @contact se espera un item que tenga los siguientes atributos o
 - **url**: enlace a más información o detalles
 - **resources**: lista de recursos asociados al ítem
 
-Para los template @terms, @info y @news se esperan los siguientes campos 
+Para los template @terms y @news se esperan los siguientes campos 
 
 - **screenTitle** : Título de la pantalla.
 - **screenSubtitle** : Subtítulo de la pantalla.
 
-Para el template @terms, se espera una lista adicional bajo el nombre de items donde el unico campo de cada ítem sea *desc* <br/>
-Para el template @info, se espera otro campo *message*, que sea el contenido a mostrar <br/>
+Para el template @terms, se espera una lista adicional bajo el nombre de items donde el unico campo de cada ítem sea *desc*, o en vez de la lista, se puede simplemente especificar un campo message para que solo se muestre un mensaje. <br/>
 Para el template @news, se espera una lista adicional bajo el nombre de *items* donde cada ítem tiene dos campos: 
 
 - **desc**: descripcion del ítem
