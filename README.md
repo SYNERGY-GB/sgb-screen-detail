@@ -22,6 +22,7 @@ Para los template @terms y @news se esperan los siguientes campos
 - **screenTitle** : Título de la pantalla.
 - **screenSubtitle** : Subtítulo de la pantalla.
 
+
 Para el template @terms, se espera una lista adicional bajo el nombre de items donde el unico campo de cada ítem sea *desc*, o en vez de la lista, se puede simplemente especificar un campo message para que solo se muestre un mensaje. <br/>
 Para el template @news, se espera una lista adicional bajo el nombre de *items* donde cada ítem tiene dos campos: 
 
@@ -31,9 +32,21 @@ Para el template @news, se espera una lista adicional bajo el nombre de *items* 
 <h3>Parámetros de la pantalla</h3>
 
 - **templateType**: Funcion o string que indica que template se va a utilizar.
+- **backButton** : Si se desea un botón para regresarse en la opción @terms
 
 <h3>Diseño</h3>
 
 <h4> Opcion @contact </h4>
 
-![Alt Text](https://s3.amazonaws.com/megazord-framework/balsamiq+mockups/sgb-screen-detail.png)
+![Alt Text](https://s3.amazonaws.com/megazord-framework/balsamiq+mockups/sgb-screen-detail-contact.png)
+
+
+<h4> Opcion @news </h4>
+
+![Alt Text](https://s3.amazonaws.com/megazord-framework/balsamiq+mockups/sgb-screen-detail-news.png)
+
+
+<h4> Opcion @terms </h4>
+
+![Alt Text](https://s3.amazonaws.com/megazord-framework/balsamiq+mockups/sgb-screen-detail-terms.png)
+

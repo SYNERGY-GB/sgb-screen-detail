@@ -1,5 +1,5 @@
-<h3 class="padding" >{{bindTo.screenTitle}}</h3>
-<h4 class="padding" >{{bindTo.screenSubtitle}}</h4>
+<h3 class="padding" ng-show="bindTo.screenTitle">{{bindTo.screenTitle}}</h3>
+<h4 class="padding" ng.show="bindTo.screenSubtitle">{{bindTo.screenSubtitle}}</h4>
 <div class="item-text-wrap" ng-repeat="item in bindTo.items">
     <p class="padding" ng-show="item.desc">{{item.desc}}</p>
     <img class="item-body full-image" ng-show="item.image" ng-src="{{item.image}}"> 
