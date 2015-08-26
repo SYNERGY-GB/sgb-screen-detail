@@ -21,6 +21,7 @@ Para los template @terms y @news se esperan los siguientes campos
 
 - **screenTitle** : Título de la pantalla.
 - **screenSubtitle** : Subtítulo de la pantalla.
+- **showIcon** : Si se desea mostrar un ícono antes del mensaje de la pantalla de la opción @terms. Se debe especificar un ícono de ionic
 
 
 Para el template @terms, se espera una lista adicional bajo el nombre de items donde el unico campo de cada ítem sea *desc*, o en vez de la lista, se puede simplemente especificar un campo message para que solo se muestre un mensaje. <br/>
