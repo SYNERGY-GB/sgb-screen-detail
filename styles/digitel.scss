@@ -193,11 +193,15 @@ input[type="text"], input[type="password"] {
 
 .scroll-size {
 	height: $scroll-size; 
-	padding-top: 1em;
+	margin-top:1em;
 	padding-left: 2em;
 	padding-right: 2em; 
 }
 
+.icon {
+	font-size: 300%; 
+	color: white; 
+}
 
 
 p {

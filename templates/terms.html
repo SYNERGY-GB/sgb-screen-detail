@@ -7,6 +7,7 @@
 		
 	<div class="dark-background-middle text-center">
 		<h3 ng-show="bindTo.screenSubtitle">{{bindTo.screenSubtitle}}</h3>
+		<i ng-show="screenParams.showIcon" class="{{screenParams.showIcon}}"></i>
 		<ion-scroll direction="y" scrollbar-y="false"
 			 class="scroll-size">
 			<p ng-repeat="item in bindTo.items" ng-show="bindTo.items"> {{item.desc}}</p>
