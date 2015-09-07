@@ -3,18 +3,16 @@
 </div>
 <div class="push-content">
 	<div class="logo-background"></div>
-	<div class="dark-background-top">
-		<h2 ng-show="bindTo.welcomeMessage" class="text-center">{{bindTo.welcomeMesssage}}</h2>
+	<div class="welcome-background">
+		<h2 ng-show="bindTo.welcomeMessage" class="thick text-center">{{bindTo.welcomeMessage}}</h2>
 	</div>
 	<div class="dark-background-middle text-center">
 		<h3 ng-show="bindTo.screenSubtitle">{{bindTo.screenSubtitle}}</h3>
 		<i ng-show="screenParams.showIcon" class="{{screenParams.showIcon}}"></i>
-		<ion-scroll direction="y" scrollbar-y="false"
-			 class="scroll-size">
+		<ion-scroll direction="y" scrollbar-y="false" class="scroll-size">
 			<p ng-repeat="item in bindTo.items" ng-show="bindTo.items"> {{item.desc}}</p>
-			<h4 ng-show="bindTo.message"> {{bindTo.message}} </h4>
 		</ion-scroll>
-		<div class="row item app-input back-button-background"
+		<div class="row app-input back-button-background"
                    data-ng-click="params.goBack()" ng-show="screenParams.backButton">
 		    <div class="col col-80 text-right">
 		       <p class="wrap"> {{'go_back' | translate}} </p>
@@ -22,5 +20,4 @@
     	</div>
     	<br/>
 	</div>
-
 </div>

@@ -1,4 +1,5 @@
 $logo-background: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/RecursosLogin-02.svg'; 
+$welcome-background: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/RecursosLogin-08.svg';
 $login-btn-background: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/RecursosLogin-05.svg';
 $app-background: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/Artboard-2.png'; 
 $dark-top : 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/fondo-02.svg';
@@ -108,7 +109,7 @@ p,h1,h2,h3,h4,h5,h6 {
 	border-radius: $input-border-radius;
 	border-width: $input-border-width;
 	margin-bottom: $input-separation;
-	border-color: $input-border-color;  
+	border: 1px solid $input-border-color;
 }
 
 /* Password and input text color */
@@ -150,16 +151,16 @@ input[type="text"], input[type="password"] {
 	@include push($push-box); 
 }
 
-.logo-background {
-	background: url($logo-background) no-repeat center;
-	background-size: 15%;
-	height: 5em;  
-	margin-top: 0.2em;
-	margin-bottom: -3em;
-}
 
 .app-background {
 	@include standard-background($app-background);
+}
+
+.welcome-background {
+	@include standard-background($welcome-background);
+	padding-top: 7em;
+	padding-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 .back-button-background {
@@ -167,19 +168,14 @@ input[type="text"], input[type="password"] {
 	margin-top: 1.5em;
 }
 
-.dark-background-top {
-	@include standard-background($dark-top);
-	height: 5em;   
-	margin-top:0.7em; 
-}
 
 .dark-background-middle {
 	background: url($dark-middle) repeat-y center;
 	background-size: 100%; 
-	margin-top: -0.9em;
+    margin-top: -2.1em;
+    padding-top: 0.1em; 
 	padding-left:0.6em; 
 	padding-right:0.6em; 
-
 }
 
 .terms-subtitle {
