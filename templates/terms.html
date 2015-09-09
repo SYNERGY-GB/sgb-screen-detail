@@ -11,7 +11,7 @@
 			<p ng-repeat="item in bindTo.items" ng-show="bindTo.items"> {{item.desc}}</p>
 		</ion-scroll>
 		<div class="row app-input back-button-background"
-                   data-ng-click="params.goBack()" ng-show="screenParams.backButton">
+                   data-ng-click="params.goBack('goBack')" ng-show="screenParams.backButton">
 		    <div class="col col-80 text-right">
 		       <p class="wrap"> {{'go_back' | translate}} </p>
 		    </div>
