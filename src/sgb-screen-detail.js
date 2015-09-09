@@ -9,10 +9,10 @@ angular.module('sgb-screen-detail', ['megazord'])
 
 /**************************************************/
 
-        $scope.goBack = function() {
+        $scope.goBack = function(event) {
             _router.fireEvent(
                 {
-                 name: 'goBack', 
+                 name: event, 
                  params: {}
                 }
             );  
