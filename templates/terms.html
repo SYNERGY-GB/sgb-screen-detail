@@ -2,13 +2,11 @@
     <h1> {{bindTo.screenTitle}} </h1>
 </div>
 <div class="push-content">
-	<div class="logo-background"></div>
-	<div class="welcome-background">
-		<h2 ng-show="bindTo.welcomeMessage" class="thick text-center">{{bindTo.welcomeMessage}}</h2>
-	</div>
+	<h2 ng-show="bindTo.welcomeMessage" style="margin-bottom:2em" 
+	    class="thick text-center">{{bindTo.welcomeMessage}}
+	</h2>
 	<div class="dark-background-middle text-center">
 		<h3 ng-show="bindTo.screenSubtitle">{{bindTo.screenSubtitle}}</h3>
-		<i ng-show="screenParams.showIcon" class="{{screenParams.showIcon}}"></i>
 		<ion-scroll direction="y" scrollbar-y="false" class="scroll-size">
 			<p ng-repeat="item in bindTo.items" ng-show="bindTo.items"> {{item.desc}}</p>
 		</ion-scroll>
