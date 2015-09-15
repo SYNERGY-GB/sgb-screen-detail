@@ -1,4 +1,4 @@
-$back-button-background: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/RecursosLogin-05.svg';
+/*$back-button-background: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/RecursosLogin-05.svg';
 $app-background: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/Artboard-2.png'; 
 $dark-middle: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/fondo-01.svg';
 $scroll-size: 320px;  
@@ -11,7 +11,7 @@ $input-border-color: #ffffff !default;
 $input-text-color: #ffffff !default; 
 
 
-/* Mixins */
+// Mixins 
 
 @mixin standard-background  ($background) {
 	background: url($background) no-repeat center;
@@ -37,7 +37,7 @@ $input-text-color: #ffffff !default;
 	margin-top: 1.5em;
 }
 
-/* Input fields & labels */
+// Input fields & labels 
 
 .app-input  {
 	height: $input-height; 
@@ -79,7 +79,7 @@ p {
 	margin-right: 1em;  
 	text-align: justify;
 }
-
+*/
 
 
 
