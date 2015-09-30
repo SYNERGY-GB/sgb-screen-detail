@@ -1,0 +1,85 @@
+/*$back-button-background: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/RecursosLogin-05.svg';
+$app-background: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/Artboard-2.png'; 
+$dark-middle: 'https://s3.amazonaws.com/megazord-framework/test/digitel-login/fondo-01.svg';
+$scroll-size: 320px;  
+$push-box: 3.1em;
+$input-height: 50px !default; 
+$input-border-radius: 4px !default; 
+$input-border-width: 1px !default; 
+$input-separation: -0.8em !default;
+$input-border-color: #ffffff !default;
+$input-text-color: #ffffff !default; 
+
+
+// Mixins 
+
+@mixin standard-background  ($background) {
+	background: url($background) no-repeat center;
+	background-size: 100%;
+}
+
+@mixin standard-placeholder ($color) {
+	color: $color;  
+    opacity : 1; 
+}
+
+@mixin push($n) {
+	position:relative; 
+	top: $n; 
+}
+
+.app-background {
+	@include standard-background($app-background);
+}
+
+.back-button-background {
+	@include standard-background($back-button-background);
+	margin-top: 1.5em;
+}
+
+// Input fields & labels 
+
+.app-input  {
+	height: $input-height; 
+	border-radius: $input-border-radius;
+	border-width: $input-border-width;
+	margin-bottom: $input-separation;
+	border: 1px solid $input-border-color;
+}
+
+.wrap {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.push-content {
+	@include push($push-box); 
+}
+
+.dark-background-middle {
+	background: url($dark-middle) repeat-y center;
+	background-size: 100%; 
+    margin-top: -2.1em;
+    padding-top: 0.1em; 
+	padding-left:0.6em; 
+	padding-right:0.6em; 
+}
+
+.scroll-size {
+	height: $scroll-size; 
+	margin-top:1em;
+	padding-left: 2em;
+	padding-right: 2em; 
+}
+
+p {
+	color: white !important;
+	font-size: 0.7em; 	
+	margin-left: 1em;
+	margin-right: 1em;  
+	text-align: justify;
+}
+*/
+
+
+
