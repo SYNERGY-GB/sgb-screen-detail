@@ -1,24 +1,24 @@
 <div class="list card opaque">
     <div class="item item-avatar item-text-wrap">
-        <img ng-show="bindTo.image" ng-src="{{ bindTo.image }}">
-        <h2>{{ bindTo.title }}</h2>
-        <h3 class="positive" ng-show="bindTo.detail_1">{{ bindTo.detail_1 }}</h3>
-        <h3 class="positive" ng-show="bindTo.detail_2">{{ bindTo.detail_2 }}</h3>
-        <h4 class="positive" ng-show="bindTo.date">{{ bindTo.date | date : format : short }}</h4>
-        <i class="icon ion-link" ng-show="bindTo.url">
-            <a class="nodecor" href="{{ bindTo.url }}">
-                {{ bindTo.url }}
+        <img ng-show="bindTo.item.image" ng-src="{{ bindTo.item.image }}">
+        <h2>{{ bindTo.item.title }}</h2>
+        <h3 class="positive" ng-show="bindTo.item.detail_1">{{ bindTo.item.detail_1 }}</h3>
+        <h3 class="positive" ng-show="bindTo.item.detail_2">{{ bindTo.item.detail_2 }}</h3>
+        <h4 class="positive" ng-show="bindTo.item.date">{{ bindTo.item.date | date : format : short }}</h4>
+        <i class="icon ion-link" ng-show="bindTo.item.url">
+            <a class="nodecor" href="{{ bindTo.item.url }}">
+                {{ bindTo.item.url }}
             </a>
         </i>
     </div>
-    <div class="row item item-divider" ng-show="bindTo.resources.length">
-        <div class="col col-25" ng-repeat="resource in bindTo.resources | limitTo:3" ng-class="{'col-offset-10' : $index > 0}">
+    <div class="row item item-divider" ng-show="bindTo.item.resources.length">
+        <div class="col col-25" ng-repeat="resource in bindTo.item.resources | limitTo:3" ng-class="{'col-offset-10' : $index > 0}">
             <a class="nodecor" href="{{resource.url}}">
                 <img ng-src="{{resource.src}}" style="width:100%">
             </a>
         </div>
     </div>
-    <div class="item item-text-wrap" ng-show="bindTo.desc" style="text-align: justify">
-        <p>{{ bindTo.desc }}</p>
+    <div class="item item-text-wrap" ng-show="bindTo.item.desc" style="text-align: justify">
+        <p>{{ bindTo.item.desc }}</p>
     </div>
 </div>
