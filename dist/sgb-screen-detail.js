@@ -2,21 +2,16 @@
 'use strict';
 
 angular.module('sgb-screen-detail', ['megazord'])
-    .controller('sgb-screen-detail-controller', ['_router', '$stateParams', '_screen', '_screenParams', '$scope', 
-                function (_router, $stateParams, _screen, _screenParams, $scope) {
+    .controller('sgb-screen-detail-controller', ['_router', '$stateParams', '_screen', '_screenParams', '$scope','$ionicHistory',
+                function (_router, $stateParams, _screen, _screenParams, $scope, $ionicHistory) {
 
         _screen.initialize($scope, _screenParams);
         $scope.data = $stateParams.data;
 
 /**************************************************/
 
-        $scope.goBack = function(event) {
-            _router.fireEvent(
-                {
-                 name: event, 
-                 params: {}
-                }
-            );  
+        $scope.goBack = function(screens) {
+            $ionicHistory.goBack(screens); 
         }
 
         $scope.extraParams = {
