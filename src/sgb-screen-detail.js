@@ -14,7 +14,13 @@ angular.module('sgb-screen-detail', ['megazord'])
         }
 
         $scope.goHome = function() {
-            $ionicHistory.goBack(($ionicHistory.viewHistory().histories.root.stack.length*(-1))-1);
+            $ionicHistory.nextViewOptions({
+                historyRoot: true
+            })
+            _router.fireEvent({
+                name: 'goHome',
+                params: {}
+            })
         }
 
         $scope.extraParams = {
