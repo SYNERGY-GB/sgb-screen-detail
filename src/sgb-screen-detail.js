@@ -6,7 +6,7 @@ angular.module('sgb-screen-detail', ['megazord'])
 
         _screen.initialize($scope, _screenParams);
         $scope.data = _data;
-
+        $scope.params = _screenParams;
 /**************************************************/
 
         $scope.goBack = function() {
