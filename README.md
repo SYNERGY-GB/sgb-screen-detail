@@ -35,6 +35,23 @@ Para el template @news, se espera una lista adicional bajo el nombre de *items* 
 - **templateType**: Funcion o string que indica que template se va a utilizar.
 - **backButton** : Si se desea un botón para regresarse en la opción @terms
 
+<h3>Ejemplo de configuracion del archivo screen.ts</h3>
+<pre>
+"detail":{
+    type:'sgb-screen-detail',
+        dataSource:{
+        type: 'sgb-datasource-param',
+        params: {
+        }
+    },
+    params: {
+        templateType:"@contact",
+        title:"Hello there! I'm Detail" ,
+    }
+
+}
+</pre>
+
 <h3>Diseño</h3>
 
 <h4> Opcion @contact </h4>
